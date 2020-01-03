@@ -88,7 +88,7 @@ void setup()
     RGB.color(100,0,50);
     Particle.variable("itsatrap", itsatrap);
     myservo.attach(A4);  
-    client.connect("particlebl", "pi", "jw780215");
+    client.connect("particlebl", "", "");
     client.publish("blind/bl/state", "OFF");
     client.subscribe("blind/bl/command");
     client.subscribe("blind/bl/level");
